@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "./utils/motion";
+import Timeswict from "./component/Timeswict";
+import Textmoves from "./component/textmoves";
+import Home from "./component/Home";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Timeswict
+        component1={
+          <Textmoves
+            textarray={["my name is", "Jay", "Wecome to", "My Portfolio"]}
+          ></Textmoves>
+        }
+        component2={
+          <Home></Home>
+        }
+        time={0} //8
+      ></Timeswict>
+
+      <div className="min-w-full min-h-screen text-center">Test</div>
     </div>
   );
 }
