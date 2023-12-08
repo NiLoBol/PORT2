@@ -28,6 +28,7 @@ import {
   dcc,
   kelhel,
   microverse,
+  shaq,
 } from '../assets';
 const skills = [
   {
@@ -76,6 +77,7 @@ const data = {
     eng: "   Hello, my name is Sathaporn (nickname J) and I am interested in learning and developing skills in Frontend Web Development. I believe that web development is an exciting avenue to learn and improve oneself, in order to create something that can help others have a seamless and impressive experience using websites.",
     thai: "   สวัสดีครับ ผมชื่อสถาพร (ชื่อเล่นเจ) ผมเป็นคนที่มีความสนใจในการเรียนรู้และพัฒนาทักษะด้านการพัฒนาเว็บไซต์ (Frontend Developer) ผมเชื่อว่าการพัฒนาเว็บไซต์เป็นอีกหนึ่งทางเลือกที่น่าสนใจในการเรียนรู้และพัฒนาตนเอง เพื่อสร้างสิ่งที่สามารถช่วยให้คนอื่นมีประสบการณ์การใช้งานเว็บไซต์ได้อย่างสะดวกและประทับใจ",
   },
+  img:shaq,
 };
 const project = [
   {
