@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 
 function H2(props) {
   return (
-    <h2 class="text-4xl font-extrabold dark:text-white">
+    <motion.h2
+      initial={"hidden"}
+      whileInView={"show"}
+      // viewport={{once: true}}
+      variants={fadeIn("right", "spring", 0.5, 0.3)}
+      class="text-3xl font-medium dark:text-white my-20"
+    >
       {props.children}
-    </h2>
-  )
+    </motion.h2>
+  );
 }
 
-export default H2
+export default H2;

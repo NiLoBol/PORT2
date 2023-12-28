@@ -3,6 +3,8 @@ import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
 
+import bg from './backgrounds/BG.png';
+
 import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 
@@ -22,6 +24,7 @@ import menu from './icons/menu.png';
 import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
+import netlify from './icons/netlify.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -44,15 +47,12 @@ import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
-import space from './projects/space-hub.png';
-
+import bigdata from './projects/bigdata.png';
+import todolist from './projects/todolist.png';
+import portfolio from './projects/portfolio.png';
 export {
   bwmap,
+  bg,
   nairobi,
   whiteabstract,
   worldmap,
@@ -88,14 +88,14 @@ export {
   redux,
   tailwind,
   typescript,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  
+  bigdata,
+  todolist,
+  portfolio,
+ 
   coverhunt,
   dcc,
   kelhel,
   microverse,
+  netlify,
 };

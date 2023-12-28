@@ -4,9 +4,10 @@ import { fadeIn, textVariant } from "./utils/motion";
 import Timeswict from "./component/Timeswict";
 import Textmoves from "./component/textmoves";
 import Home from "./component/Home";
+import Hero from "./component/Hero";
 function App() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Timeswict
         component1={
           <Textmoves
@@ -14,12 +15,14 @@ function App() {
           ></Textmoves>
         }
         component2={
-          <Home></Home>
+          <div>
+            <Hero></Hero>
+            <Home></Home>
+          </div>
         }
-        time={0} //8
+        time={8} //8
       ></Timeswict>
-
-      <div className="min-w-full min-h-screen text-center">Test</div>
+      
     </div>
   );
 }
