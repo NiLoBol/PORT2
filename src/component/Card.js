@@ -15,7 +15,7 @@ function Card(props) {
 
   const parentref = useRef(null);
   useEffect(() => {
-    const height = ref.current.getBoundingClientRect().height;
+    const height = ref.current.getBoundingClientRect().height+203;
     refchildren.current.style.bottom = `${height}px`;
     parentref.current.style.height = `${height}px`;
     refchildren.current.style.height = `${height}px`;
@@ -23,15 +23,15 @@ function Card(props) {
   }, [ref]);
 
   return (
-    <div ref={parentref}>
+    <div ref={parentref} className="min-h-[450px]">
       <motion.div
-        ref={ref}
-        class="max-w-sm bg-white border border-gray-200 rounded-lg  shadow-lg dark:bg-gray-800 dark:border-gray-700"
+        
+        class="max-w-sm  bg-white border border-gray-200 rounded-lg  shadow-lg dark:bg-gray-800 dark:border-gray-700"
       >
-        <a>
-          <img class="rounded-t-lg" src={img} alt="" />
+        <a className="flex h-[200px] ">
+          <img class="rounded-t-lg h-[200px] object-cover" src={img} alt="" />
         </a>
-        <div class="p-5">
+        <div class="p-5" ref={ref}>
           <a>
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {name}

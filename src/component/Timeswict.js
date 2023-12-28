@@ -10,7 +10,7 @@ function Timeswict(props) {
         setobj(component2)
     }, time*1000);
   return (
-    <div>
+    <div onClick={()=>setobj(component2)}>
       {obj}
     </div>
   )

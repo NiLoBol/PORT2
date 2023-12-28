@@ -10,6 +10,7 @@ import H1 from "./component/H1";
 import ProjectList from "./component/ProjectList";
 import { project } from "./constants";
 import { styles } from "./styles";
+import Portfolio from "./component/Portfolio";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
@@ -19,20 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/portfolio",
-    element: 
-      <div className=" w-screen container mx-auto">
-        <H1 id="project" className={styles.sectionHeadText}>
-          My Project
-        </H1>
-        <ProjectList
-          next={"back"}
-          nexthref={"/"}
-          icon={"fa-solid fa-arrow-left"}
-          anime={"left"}
-          data={project.filter((item) => item.name != "")}
-        />
-      </div>
-    ,
+    element: <Portfolio/>,
   },
 ]);
 root.render(
