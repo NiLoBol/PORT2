@@ -1,14 +1,16 @@
 // counterSlice.js
 
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
+const isMobile = window.matchMedia("(max-width: 767px)").matches;
 const initialState = {
   value: 0,
   next: false,
+  mobile: isMobile,
 };
 
 const counterSlice = createSlice({
-  name: 'counter',
+  name: "counter",
   initialState,
   reducers: {
     increment(state) {
@@ -27,5 +29,5 @@ const counterSlice = createSlice({
 export const { increment, decrement, toggleNext } = counterSlice.actions;
 export const selectCount = (state) => state.counter.value;
 export const selectNext = (state) => state.next; // เพิ่ม selector สำหรับ next
-
+export const selectmobile = (state) => state.mobile; // เพิ่ม selector สำหรับ next
 export default counterSlice.reducer;

@@ -5,7 +5,9 @@ import Timeswict from "./component/Timeswict";
 import Textmoves from "./component/textmoves";
 import Home from "./component/Home";
 import Hero from "./component/Hero";
+import { useSelector } from "react-redux";
 function App() {
+
   return (
     <div className="overflow-hidden">
       <Timeswict
@@ -22,7 +24,6 @@ function App() {
         }
         time={8} //8
       ></Timeswict>
-      
     </div>
   );
 }

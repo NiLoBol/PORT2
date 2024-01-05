@@ -65,27 +65,27 @@ function Contect() {
       animate={{}}
       className="min-w-full min-h-screen bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 hover:to-purple-600  hover:via-blue-600  text-white text-center "
     >
-      <H1 className={styles.sectionHeadText + " text-white  pt-16"}>Contact</H1>
+      <H1 className={styles.sectionHeadText + " text-white  pt-5"}>Contact</H1>
       <div className=" flex flex-row flex-wrap justify-around mt-10">
-        <div className="basis-full">
-          <a href="https://www.facebook.com/profile.php?id=100002073303565" className="mx-24">
+        <div className="basis-full relative top-0">
+          <a href="https://www.facebook.com/profile.php?id=100002073303565" className="absolute xl:top-[-120px] top-[-70px] right-20 xl:right-32">
             <i class="fa-brands fa-facebook fa-bounce hover:text-cyan-200 fa-2xl"></i>
           </a>
-          <a href="https://github.com/NiLoBol" className="mx-24">
+          <a href="https://github.com/NiLoBol" className="absolute xl:top-[-120px] top-[-70px] right-10 xl:right-20">
             <i class="fa-brands fa-github fa-bounce hover:text-cyan-200 fa-2xl"></i>
           </a>
-          
         </div>
-        <div className="basis-1/2  ">
+
+        <div className="lg:basis-1/2  sm:basis-2/3 basis-full  ">
           <motion.div
             whileInView={"show"}
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="flex-[0.75]  p-8 rounded-2xl"
+            className="flex-[0.75]  p-8 rounded-2xl  sm:backdrop-blur-sm sm:bg-white/20 mb-10"
           >
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="mt-10 flex flex-col gap-6 font-poppins"
+              className=" flex flex-col gap-6 font-poppins"
             >
               <label className="flex flex-col">
                 <span className="text-white font-semibold mb-4">Your Name</span>

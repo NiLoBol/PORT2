@@ -7,15 +7,14 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectNext, toggleNext } from "../redux/counterSlice";
 import { Link } from "react-router-dom";
 function ProjectList(props) {
-  const next = useSelector((state)=>state.counter.next);
+  const next = useSelector((state) => state.counter.next);
   const dispatch = useDispatch();
   const anime = props.anime;
- 
   const handleNextClick = () => {
-      dispatch(toggleNext());
-      console.log(next);
-      setTimeout(() => {
-        window.location.href = props.nexthref;
+    dispatch(toggleNext());
+    console.log(next);
+    setTimeout(() => {
+      window.location.href = props.nexthref;
     }, 500);
   };
   const data = props.data;
@@ -28,12 +27,7 @@ function ProjectList(props) {
         type: "tween",
         ease: "easeIn",
       },
-      x:
-        anime === "right"
-          ? [-150, -50]
-          : anime === "left"
-          ? [0, -100]
-          : 0,
+      x: anime === "right" ? [-150, -50] : anime === "left" ? [0, -100] : 0,
     },
   };
   const addMotionre = {
@@ -49,10 +43,11 @@ function ProjectList(props) {
     },
   };
   return (
-    <motion.div 
-    animate={next?"hidden":"show"}
-    variants={slideout(anime, "spring", 0, 0.5)}
-    className="flex flex-row flex-wrap justify-center gap-10">
+    <motion.div
+      animate={next ? "hidden" : "show"}
+      variants={slideout(anime, "spring", 0, 0.5)}
+      className="flex flex-row flex-wrap justify-center gap-10"
+    >
       {data.length > 0
         ? data.map((value, index) => {
             return (
@@ -61,7 +56,7 @@ function ProjectList(props) {
                 whileInView={"show"}
                 // viewport={{once: true}}
                 variants={fadeIn("right", "spring", 0.2 * (index % 4), 0.7)}
-                className=" xl:w-[280px] flex-col  my-10 hover:cursor-pointer"
+                className=" xl:w-[280px] sm:w-[250px] flex-col  sm:my-10 hover:cursor-pointer"
                 key={index}
                 id={index}
               >
@@ -83,7 +78,7 @@ function ProjectList(props) {
         whileInView={"show"}
         // viewport={{once: true}}
         variants={fadeIn("right", "spring", 0.2 * (data.length % 4), 0.7)}
-        className=" xl:w-[280px] flex-col  my-10 hover:cursor-pointer"
+        className="xl:w-[280px] sm:w-[250px] w-[300px] flex-col mb-10 sm:my-10 hover:cursor-pointer  "
         key={data.length}
         id={data.length}
       >

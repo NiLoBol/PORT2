@@ -15,6 +15,7 @@ import Contect from "./Contect";
 import { styles } from "../styles";
 function Home() {
   const next = useSelector((state) => state.counter.next);
+
   // หน้าแรก
   // เกียวกับฉัน
   // สกิล
@@ -26,14 +27,14 @@ function Home() {
     <div className="">
       <About />
       <Skills />
-      <motion.div 
-      animate={next?{left:0}:{left:"100vw"}}
-      className="fixed top-0 right-full h-screen w-screen bg-white">
+      <motion.div
+        animate={next ? { left: 0 } : { left: "100vw" }}
+        className="fixed top-0 right-full h-screen w-screen bg-white z-10"
+      ></motion.div>
 
-      </motion.div>
       <div className="bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 mt-10">
         <div className="mx-24 container mx-auto justify-center ">
-          <H1 id="project" className={styles.sectionHeadText + " "}>
+          <H1 id="project" className={styles.sectionHeadText + " mb-20 pt-5"}>
             My Project
           </H1>
           <ProjectList

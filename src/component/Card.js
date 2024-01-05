@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { data } from "../constants";
 import { slideIn, slideIno } from "../utils/motion";
 import { netlify } from "../assets";
+import { useSelector } from "react-redux";
 
 function Card(props) {
   const name = props.name;
@@ -12,24 +13,35 @@ function Card(props) {
   const github = props.github;
   const ref = useRef(null);
   const refchildren = useRef(null);
-
+  const [isOpen, setIsOpen] = useState(false);
   const parentref = useRef(null);
+
+  // const mobile = useSelector((state) => state.counter.moblie);
+  let Hcard = 203;
+
   useEffect(() => {
-    const height = ref.current.getBoundingClientRect().height+203;
+    const height = ref.current.getBoundingClientRect().height + Hcard;
     refchildren.current.style.bottom = `${height}px`;
     parentref.current.style.height = `${height}px`;
     refchildren.current.style.height = `${height}px`;
-    console.log(parentref.current.style.height+" "+refchildren.current.style.height+"  "+height );
+    console.log(
+      parentref.current.style.height +
+        " " +
+        refchildren.current.style.height +
+        "  " +
+        height
+    );
   }, [ref]);
 
   return (
-    <div ref={parentref} className="min-h-[450px]">
-      <motion.div
-        
-        class="max-w-sm  bg-white border border-gray-200 rounded-lg  shadow-lg dark:bg-gray-800 dark:border-gray-700"
-      >
-        <a className="flex h-[200px] ">
-          <img class="rounded-t-lg h-[200px] object-cover" src={img} alt="" />
+    <div ref={parentref} className="sm:min-h-[150px] ">
+      <motion.div class="sm:max-w-sm max-w-[300px]  bg-white border border-gray-200 rounded-lg  shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <a className="flex h-[200px]  ">
+          <img
+            class="rounded-t-lg h-[200px]  object-cover"
+            src={img}
+            alt=""
+          />
         </a>
         <div class="p-5" ref={ref}>
           <a>
@@ -45,13 +57,15 @@ function Card(props) {
       <motion.div
         ref={refchildren}
         whileHover={{ opacity: 1 }}
+        animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
+        onClick={() => setIsOpen(!isOpen)}
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0 }}
-        className={` max-w-sm bg-[#000000dd]  rounded-lg shadow-2xl   dark:bg-gray-800 dark:border-gray-700 z-10 relative `}
+        className={`sm:max-w-sm max-w-[300px]  bg-[#000000dd]  rounded-lg shadow-2xl   dark:bg-gray-800 dark:border-gray-700 z-10 relative `}
       >
         <motion.div
           whileHover="show"
           initial="hidden"
+          animate={isOpen ? "show" : "hidden"}
           className="flex flex-row items-center justify-center gap-[30px] w-full h-full z-10 relative"
         >
           {github ? (

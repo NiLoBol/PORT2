@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => {
       whileInView={"show"}
       whileHover={{ scale: 1.2 }}
       variants={fadeIn("right", "spring", 0.25 * index, 0.35)}
-      className="p-[1px] mx-[10px] my-[10px] basis-1/5     xl:p-[1px] rounded-[20px]  xl:mx-[30px] xl:my-[20px]"
+      className="p-[1px] mx-[10px] my-[10px] basis-1/3 sm:basis-1/5 xl:p-[1px] rounded-[20px]  xl:mx-[30px] xl:my-[20px]"
       // data-tooltip-target="tooltip-default"
     >
       <div
@@ -23,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => {
         className="bg-black rounded-[20px] py-2 px-2 xl:py-5 xl:px-12 
         min-h-[50px] flex justify-evenly items-center flex-col "
       >
-        <img src={icon} alt="" className=" w-[50px] xl:w-[100px]" />
+        <img src={icon} alt="" className=" w-[75px] xl:w-[100px]" />
 
         {/* <div
             id="tooltip-default"
@@ -39,12 +39,12 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 function Skills() {
   return (
-    <div className="mx-24 container mx-auto  ">
+    <div className="mx-24 container mx-auto mt-24 ">
       <div className="flex justify-center">
         <H1 className={styles.sectionHeadText }>Web Developer Skills</H1>
         
       </div>
-      <div className="mt-5 xl:mt-20 flex flex-wrap justify-center">
+      <div className="mt-5 xl:mt-20 flex flex-wrap justify-center min-h-[250px] xl:min-h-[500px] xl:min-h-0">
         {skills.map((skills, index) => (
           <ServiceCard title={skills.name} icon={skills.icon} index={index} />
         ))}

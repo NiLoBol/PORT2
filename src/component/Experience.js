@@ -7,7 +7,7 @@ import { styles } from "../styles";
 function Experience() {
   return (
     <div className="my-5 min-h-screen">
-      <H1 fade="right" className={styles.sectionHeadText + " pb-24"}>
+      <H1 fade="right" className={styles.sectionHeadText + " sm:pb-5 xl:pb-24"}>
         Experience
       </H1>
       {data.experience.thai.map((item,index) => {
