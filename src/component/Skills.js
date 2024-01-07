@@ -44,7 +44,7 @@ function Skills() {
         <H1 className={styles.sectionHeadText }>Web Developer Skills</H1>
         
       </div>
-      <div className="mt-5 xl:mt-20 flex flex-wrap justify-center min-h-[250px] xl:min-h-[500px] xl:min-h-0">
+      <div className="mt-5 xl:mt-20 flex flex-wrap justify-center sm:justify-between min-h-[250px] xl:min-h-[500px] xl:min-h-0">
         {skills.map((skills, index) => (
           <ServiceCard title={skills.name} icon={skills.icon} index={index} />
         ))}

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { data, navLinks } from "../constants";
-import { shaq, bwmap, worldmap } from "../assets";
+import { shaq, bwmap, worldmap, download, downloadHover, resume } from "../assets";
 import BG from "../assets/backgrounds/BG.png";
 import { slideIn } from "../utils/motion";
 import H1 from "./H1";
@@ -35,6 +35,35 @@ const Hero = () => {
               <H1 fade="left" className="text-5xl leading-[100px]">Hi, I'm</H1>
               <H1 fade="up" className="text-5xl leading-[100px]" >{data.name.eng}</H1>
             </h1>
+            <a
+              className="flex justify-between 
+              sm:text-[18px] text-[14px] bg-white
+              font-bold  items-center py-5 pl-3 pr-3 
+              whitespace-nowrap gap-1 sm:w-[180px] 
+              sm:mt-[22px] mt-[16px] resume 
+               
+              hover:text-white hover:from-pink-500 hover:via-red-500 hover:to-yellow-500
+              "
+              href={resume} download="resume"
+              onMouseOver={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', download);
+              }}
+              onMouseOut={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', downloadHover);
+              }}
+              >
+              MY RESUME
+              <img
+                src={download}
+                alt="download"
+                className="download-btn sm:w-[26px] sm:h-[26px] 
+                w-[23px] h-[23px] object-contain"
+              />
+            </a>
           </div>
           
 
@@ -65,6 +94,35 @@ const Hero = () => {
               <H1 fade="right" className="x">Hi, I'm</H1>
               <H1 fade="up" className="x" >{data.name.eng}</H1>
             </h1>
+            <a
+              className="flex justify-between 
+              sm:text-[18px] text-[14px] bg-white
+              font-bold  items-center py-5 pl-3 pr-3 
+              whitespace-nowrap gap-1 sm:w-[180px] 
+              sm:mt-[22px] mt-[16px] resume 
+               
+              hover:text-white hover:from-pink-500 hover:via-red-500 hover:to-yellow-500
+              "
+              href={resume} download="resume"
+              onMouseOver={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', download);
+              }}
+              onMouseOut={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', downloadHover);
+              }}
+              >
+              MY RESUME
+              <img
+                src={download}
+                alt="download"
+                className="download-btn sm:w-[26px] sm:h-[26px] 
+                w-[23px] h-[23px] object-contain"
+              />
+            </a>
           </div>
           <motion.div
             initial="hidden"

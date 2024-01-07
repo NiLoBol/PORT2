@@ -21,7 +21,6 @@ import downloadHover from './icons/downloadHover.png';
 import pineapple from './icons/pineapple.png';
 import pineappleHover from './icons/pineappleHover.png';
 import menu from './icons/menu.png';
-import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
 import netlify from './icons/netlify.png';
@@ -41,6 +40,8 @@ import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
 import mongodb from './tech/mongodb.png';
+import NextJs from './tech/Next.png';
+
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
@@ -50,6 +51,8 @@ import microverse from './company/microverse.png';
 import bigdata from './projects/bigdata.png';
 import todolist from './projects/todolist.png';
 import portfolio from './projects/portfolio.png';
+
+import resume from './personal/resume.pdf';
 export {
   bwmap,
   bg,
@@ -88,7 +91,9 @@ export {
   redux,
   tailwind,
   typescript,
-  
+  NextJs,
+
+
   bigdata,
   todolist,
   portfolio,
@@ -98,4 +103,5 @@ export {
   kelhel,
   microverse,
   netlify,
+
 };

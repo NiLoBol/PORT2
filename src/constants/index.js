@@ -20,6 +20,7 @@ import {
   rubyrails,
   graphql,
   komikult,
+  NextJs,
   leaderboard,
   math,
   movie,
@@ -34,6 +35,7 @@ import {
   bigdata,
   todolist,
   portfolio,
+  resume,
 } from "../assets";
 
 const services = [
@@ -86,6 +88,10 @@ const skills = [
   {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "NextJs",
+    icon: NextJs,
   },
 ];
 const data = {
