@@ -108,14 +108,16 @@
   height: 100%;
   width: 0;
   border-radius: 15px;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  background: linear-gradient(to right bottom, rgb(255, 0, 140), rgb(163, 77, 255), rgb(0, 26, 255));
   z-index: -1;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
 }
 
-
+.resume:hover {
+  color: #e8e8e8;
+}
 
 .resume:hover::before {
   width: 100%;

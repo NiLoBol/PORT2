@@ -41,8 +41,7 @@ const Hero = () => {
               font-bold  items-center py-5 pl-3 pr-3 
               whitespace-nowrap gap-1 sm:w-[180px] 
               sm:mt-[22px] mt-[16px] resume 
-               
-              hover:text-white hover:from-pink-500 hover:via-red-500 hover:to-yellow-500
+              hover:text-white hover:bg-gradient-to-brc hover:from-pink-500 hover:via-red-500 hover:to-yellow-500
               "
               href={resume} download="resume"
               onMouseOver={() => {
@@ -100,8 +99,7 @@ const Hero = () => {
               font-bold  items-center py-5 pl-3 pr-3 
               whitespace-nowrap gap-1 sm:w-[180px] 
               sm:mt-[22px] mt-[16px] resume 
-               
-              hover:text-white hover:from-pink-500 hover:via-red-500 hover:to-yellow-500
+              hover:text-white hover:bg-gradient-to-brc hover:from-pink-500 hover:via-red-500 hover:to-yellow-500
               "
               href={resume} download="resume"
               onMouseOver={() => {
