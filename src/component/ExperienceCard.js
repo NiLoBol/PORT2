@@ -8,11 +8,16 @@ function ExperienceCard(props) {
     <motion.div
       initial={"hidden"}
       whileInView={"show"}
-      whileHover={{scale:1.25 ,cursor:"pointer",}}
-      variants={slideIn(props.fade,"spring", 0.2,1)}
+      whileHover={{ scale: 1, cursor: "pointer" }}
+      variants={slideIn(props.fade, "spring", 0.2, 1)}
       className="border-[1px] px-5 py-10 border-gray-100 rounded-2xl shadow-xl my-10 mx-16 sm:mx-16 lg:mx-24  xl:mx-44 "
     >
-      <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-center ">{props.children}</h1>
+      <motion.h1
+        whileHover={{ scale: 1.5, cursor: "pointer" }}
+        className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-center "
+      >
+        {props.children}
+      </motion.h1>
     </motion.div>
   );
 }

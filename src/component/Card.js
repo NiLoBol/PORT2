@@ -4,7 +4,7 @@ import { data } from "../constants";
 import { slideIn, slideIno } from "../utils/motion";
 import { netlify } from "../assets";
 import { useSelector } from "react-redux";
-
+import { styles } from "../styles";
 function Card(props) {
   const name = props.name;
   const href = props.href;
@@ -15,7 +15,8 @@ function Card(props) {
   const refchildren = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const parentref = useRef(null);
-
+  const type = props.type;
+  console.log(type);
   // const mobile = useSelector((state) => state.counter.moblie);
   let Hcard = 203;
 
@@ -24,24 +25,20 @@ function Card(props) {
     refchildren.current.style.bottom = `${height}px`;
     parentref.current.style.height = `${height}px`;
     refchildren.current.style.height = `${height}px`;
-    console.log(
-      parentref.current.style.height +
-        " " +
-        refchildren.current.style.height +
-        "  " +
-        height
-    );
+    // console.log(
+    //   parentref.current.style.height +
+    //     " " +
+    //     refchildren.current.style.height +
+    //     "  " +
+    //     height
+    // );
   }, [ref]);
 
   return (
     <div ref={parentref} className="sm:min-h-[150px] ">
       <motion.div class="sm:max-w-sm max-w-[300px]  bg-white border border-gray-200 rounded-lg  shadow-lg dark:bg-gray-800 dark:border-gray-700">
         <a className="flex h-[200px]  ">
-          <img
-            class="rounded-t-lg h-[200px]  object-cover"
-            src={img}
-            alt=""
-          />
+          <img class="rounded-t-lg h-[200px]  object-cover" src={img} alt="" />
         </a>
         <div class="p-5" ref={ref}>
           <a>
@@ -66,9 +63,10 @@ function Card(props) {
           whileHover="show"
           initial="hidden"
           animate={isOpen ? "show" : "hidden"}
-          className="flex flex-row items-center justify-center gap-[30px] w-full h-full z-10 relative"
+          className="flex flex-row flex-wrap items-center justify-center content-center gap-[30px] w-full h-full z-10 relative"
         >
-          {github ? (
+          <div className="basis-full flex flex-row flex-wrap items-center justify-center content-center gap-[30px] ">
+              {github ? (
             <motion.a
               variants={slideIno("left", "spring", 0, 0.8)}
               type="button"
@@ -102,7 +100,21 @@ function Card(props) {
               netlify
             </motion.a>
           ) : null}
+          </div>
+        
+          {type.map((item) => {
+            return (
+              <motion.a
+                variants={slideIno("left", "spring", 0, 0.8)}
+                type="button"
+                class={item==="CSS"?styles.CSS:item==="HTML"?styles.HTML:item==="JAVASCRIPT"?styles.JavaScript:item==="API"?styles.API:item==="NEXTJS"?styles.NEXTJS:item==="MONGO DB"?styles.MongoDB:styles.CSS}
+              >
+                {item}
+              </motion.a>
+            );
+          })}
         </motion.div>
+
       </motion.div>
     </div>
   );

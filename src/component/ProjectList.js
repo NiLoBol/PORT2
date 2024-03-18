@@ -6,6 +6,7 @@ import { fadeIn, slideIn, slideout } from "../utils/motion";
 import { useSelector, useDispatch } from "react-redux";
 import { selectNext, toggleNext } from "../redux/counterSlice";
 import { Link } from "react-router-dom";
+import { styles } from "../styles";
 function ProjectList(props) {
   const next = useSelector((state) => state.counter.next);
   const dispatch = useDispatch();
@@ -68,6 +69,7 @@ function ProjectList(props) {
                   img={value.img}
                   index={index}
                   text={value.text}
+                  type={value.type}
                 ></Card>
               </motion.div>
             );

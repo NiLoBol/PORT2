@@ -30,6 +30,15 @@ const styles = {
     'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
   sectionSubTextLight:
     'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
+
+    CSS:'bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dme-2 mb-2',
+    HTML:'bg-orange-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dme-2 mb-2',
+    JavaScript:'bg-yellow-500 text-black font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dme-2 mb-2',
+    API:' bg-purple-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dme-2 mb-2',
+    NEXTJS:'bg-gray-700 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dme-2 mb-2',
+    MongoDB:'bg-green-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dme-2 mb-2',
+  
 };
+
 
 export { styles };
