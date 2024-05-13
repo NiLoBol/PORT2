@@ -279,7 +279,7 @@ const project = [
       "https://github.com/NiLoBol/intro-component-with-signup-form-master",
     type: ["CSS", "HTML"],
     text: "การสร้างหน้า sign-up แสดงข้อความสีแดงเมื่อส่งค่าว่าง รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
-    RECOMMEND: true,
+    RECOMMEND: false,
   },
   {
     name: "Newsletter sign-up form with success message",
@@ -322,6 +322,15 @@ const project = [
     github: "",
     type: ["HTML","CSS"],
     text: "การสร้างหน้าเว็บ Big Data Page โดยได้โซลูชั่นมาจาก figma ",
+    RECOMMEND: true,
+  },
+  {
+    name: "Space tourism multi-page website",
+    href: "https://spacetourismwebsitemain.netlify.app/",
+    img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Challenges/wudjsbv8g93aarlhvbud.jpg",
+    github: "https://github.com/NiLoBol/space-tourism-website-main",
+    type: ["TYPESCRIPT", "NEXTJS", "CSS"],
+    text: "",
     RECOMMEND: true,
   },
   // {
