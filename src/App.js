@@ -22,7 +22,7 @@ function App() {
             <Home></Home>
           </div>
         }
-        time={8} //8
+        time={4} //8
       ></Timeswict>
     </div>
   );

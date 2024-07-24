@@ -51,7 +51,16 @@ import microverse from './company/microverse.png';
 import bigdata from './projects/bigdata.png';
 import todolist from './projects/todolist.png';
 import portfolio from './projects/portfolio.png';
+import ecommerce from './projects/ecommerce.png';
+import newshomepagemain from './projects/newshomepagemain.png';
+import Interactivecard from './projects/Interactivecard.png';
+import interactivecarddetailsformmain from './projects/interactivecarddetailsformmain.png';
+import Managelandingpage from './projects/Managelandingpage.png';
+import shortenurl from './projects/shortenurl.png';
+import productlistwithcart from './projects/productlistwithcart.png';
 
+
+// import  from './projects/.png';
 import resume from './personal/resume.pdf';
 export {
   bwmap,
@@ -97,7 +106,15 @@ export {
   bigdata,
   todolist,
   portfolio,
- 
+  ecommerce,
+  newshomepagemain,
+  Interactivecard,
+  interactivecarddetailsformmain,
+  Managelandingpage,
+  shortenurl,
+  productlistwithcart,
+
+  
   coverhunt,
   dcc,
   kelhel,

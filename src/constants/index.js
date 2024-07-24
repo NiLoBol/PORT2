@@ -36,6 +36,13 @@ import {
   todolist,
   portfolio,
   resume,
+  ecommerce,
+  newshomepagemain,
+  Interactivecard,
+  interactivecarddetailsformmain,
+  Managelandingpage,
+  shortenurl,
+  productlistwithcart,
 } from "../assets";
 
 const services = [
@@ -135,7 +142,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/ouobx6tvyduidzio7wr7.jpg",
     github: "https://github.com/NiLoBol/order-summary-component-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างการ์ด สรุปการสั่งซื้อ รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างการ์ด สรุปการสั่งซื้อ รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Todo app",
@@ -143,7 +150,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/ty4ppudcq94rtgj4rv6p.jpg",
     github: "https://github.com/NiLoBol/todo-app-main",
     type: ["CSS", "HTML", "JAVASCRIPT"],
-    text: "การสร้างหน้า Todolis การปรับโหมดมืด การกรองข้อมูลและเคลียรข้อมูลในTodolis รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างหน้า Todolis การปรับโหมดมืด การกรองข้อมูลและเคลียรข้อมูลในTodolis รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
     RECOMMEND: true,
   },
   {
@@ -152,16 +159,16 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/pigotdvhcch2b3wp9uuc.jpg",
     github: "https://github.com/NiLoBol/sunnyside-agency-landing-page-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างแลนดิ้งเพจ รองรับเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างแลนดิ้งเพจ รองรับเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
     RECOMMEND: true,
   },
   {
     name: "E-commerce product page",
     href: "https://precious-blancmange-c6f319.netlify.app/",
-    img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/fhzpdnabrek50hvhftnl.jpg",
+    img: ecommerce,
     github: "https://github.com/NiLoBol/ecommerce-product-page-main",
     type: ["CSS", "HTML", "JAVASCRIPT"],
-    text: "การสร้างหน้า E-commerce product การเพิ่มของลงตระกร้า เพิ่มราคาสิ้นค้าทั้งหมดตามจำนวนของในตระกร้า รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างหน้า E-commerce product การเพิ่มของลงตระกร้า เพิ่มราคาสิ้นค้าทั้งหมดตามจำนวนของในตระกร้า รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
     RECOMMEND: true,
   },
   {
@@ -170,7 +177,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/sfl8uqvq75wnnr559ksp.jpg",
     github: "https://github.com/NiLoBol/advice-generator-app-main",
     type: ["CSS", "HTML", "JAVASCRIPT", "API"],
-    text: "การสร้างหน้า คำแนะนำ โดยจะสุ่มคำแนะนำจาก API รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างหน้า คำแนะนำ โดยจะสุ่มคำแนะนำจาก API รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Profile card component",
@@ -178,15 +185,15 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/dia0o9uigiiz4gebiqps.jpg",
     github: "https://github.com/NiLoBol/profile-card-component-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างหน้า โปรไฟล์ รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างหน้า โปรไฟล์ รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "News homepage",
     href: "https://symphonious-malabi-434105.netlify.app/",
-    img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/abbzt6kmkawmpbj7evxx.jpg",
+    img: newshomepagemain,
     github: "https://github.com/NiLoBol/news-homepage-main",
     type: ["CSS", "HTML"],
-    text: "สร้างหน้าแรกของเว็บไซต์ข่าว รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "สร้างหน้าแรกของเว็บไซต์ข่าว รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
     RECOMMEND: true,
   },
   {
@@ -195,7 +202,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/xhxtaym7uzypzb37rpcc.jpg",
     github: "https://github.com/NiLoBol/expenses-chart-component-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างส่วนประกอบแผนภูมิแท่ง รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างส่วนประกอบแผนภูมิแท่ง รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Intro section with dropdown navigation",
@@ -204,7 +211,7 @@ const project = [
     github:
       "https://github.com/NiLoBol/intro-section-with-dropdown-navigation-main",
     type: ["CSS", "HTML", "JAVASCRIPT"],
-    text: "การสร้างหน้า Make remote work รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างหน้า Make remote work รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "3-column preview card component",
@@ -212,7 +219,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/juir90bwmmvlo86g9paz.jpg",
     github: "https://github.com/NiLoBol/3-column-preview-card-component-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างส่วนประกอบการ์ดแสดงตัวอย่าง 3 คอลัมน์ รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor ",
+    text: "การสร้างส่วนประกอบการ์ดแสดงตัวอย่าง 3 คอลัมน์ รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor ",
   },
   {
     name: "NFT preview card component",
@@ -220,23 +227,23 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/rinokvkluq95madbvtmk.jpg",
     github: "https://github.com/NiLoBol/nft-preview-card-component-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างส่วนประกอบการ์ด NFT รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างส่วนประกอบการ์ด NFT รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Interactive card details form",
     href: "https://silly-kringle-d8a873.netlify.app/",
-    img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/u57dcsnhvoalnixjt6kb.jpg",
+    img: interactivecarddetailsformmain,
     github: "https://github.com/NiLoBol/interactive-card-details-form-main",
     type: ["CSS", "HTML", "JAVASCRIPT"],
-    text: "การสร้างแบบฟอร์มรายละเอียดการ์ดบัตรเครดิต รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างแบบฟอร์มรายละเอียดการ์ดบัตรเครดิต รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Interactive rating component",
     href: "https://magnificent-praline-dda532.netlify.app/",
-    img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/hxx2bhmtmeelt0a98zos.jpg",
+    img: Interactivecard,
     github: "https://github.com/NiLoBol/interactive-rating-component-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างองค์ประกอบการให้คะแนน หลังจากให้คะแนนแล้วจะเปลี่ยนเป็นหน้าส่งผลคะแนน รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างองค์ประกอบการให้คะแนน หลังจากให้คะแนนแล้วจะเปลี่ยนเป็นหน้าส่งผลคะแนน รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Product preview card component",
@@ -244,7 +251,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/lftjtn81b7brs2icc898.jpg",
     github: "https://github.com/NiLoBol/product-preview-card-component-main",
     type: ["CSS", "HTML"],
-    text: "การสร้างส่วนประกอบการ์ดแสดงตัวอย่างผลิตภัณฑ์ รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างส่วนประกอบการ์ดแสดงตัวอย่างผลิตภัณฑ์ รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Notifications page",
@@ -253,7 +260,7 @@ const project = [
     github:
       "https://github.com/NiLoBol/notifications-page-main/tree/main/notifications-page-main",
     type: ["CSS", "HTML", "JAVASCRIPT"],
-    text: "การสร้างหน้าการแจ้งเตือน แยกความแตกต่างระหว่าง 'ยังไม่ได้อ่าน' และ 'อ่าน' การแจ้งเตือน รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างหน้าการแจ้งเตือน แยกความแตกต่างระหว่าง 'ยังไม่ได้อ่าน' และ 'อ่าน' การแจ้งเตือน รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Results summary component",
@@ -261,7 +268,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Screenshots/mgzltquqffj7wrcfxtrr.jpg",
     github: "https://github.com/NiLoBol/Results-summary-component",
     type: ["CSS", "HTML"],
-    text: "การสร้างองค์ประกอบสรุปผลลัพธ์ รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างองค์ประกอบสรุปผลลัพธ์ รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Article preview component",
@@ -269,7 +276,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Screenshots/zyxx1yo7yhkvwpwcbojj.jpg",
     github: "https://github.com/NiLoBol/article-preview-component-master",
     type: ["CSS", "HTML"],
-    text: "การสร้างองค์ประกอบการแสดงตัวอย่างบทความ รองรับเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างองค์ประกอบการแสดงตัวอย่างบทความ รองรับเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "Intro component with sign-up form",
@@ -278,7 +285,7 @@ const project = [
     github:
       "https://github.com/NiLoBol/intro-component-with-signup-form-master",
     type: ["CSS", "HTML"],
-    text: "การสร้างหน้า sign-up แสดงข้อความสีแดงเมื่อส่งค่าว่าง รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างหน้า sign-up แสดงข้อความสีแดงเมื่อส่งค่าว่าง รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
     RECOMMEND: false,
   },
   {
@@ -288,7 +295,7 @@ const project = [
     github:
       "https://github.com/NiLoBol/newsletter-sign-up-with-success-message-main",
     type: ["CSS", "HTML", "JAVASCRIPT"],
-    text: "การสร้างแบบฟอร์มจดหมายข่าว แสดงข้อความสีแดงเมื่อไม่อยู่ในรูปแบบ email ไม่ถูกต้อง ถ้าถูกต้องจะไปยังหน้าขอบคุณ รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างแบบฟอร์มจดหมายข่าว แสดงข้อความสีแดงเมื่อไม่อยู่ในรูปแบบ email ไม่ถูกต้อง ถ้าถูกต้องจะไปยังหน้าขอบคุณ รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "FAQ accordion card",
@@ -296,7 +303,7 @@ const project = [
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Screenshots/abce3sd2imeruis6auzj.jpg",
     github: "https://github.com/NiLoBol/FAQ-accordion-card.",
     type: ["CSS", "HTML"],
-    text: "การสร้างการ์ด FAQ แสดงข้อความที่ซ้อนไว้เมื่อคลิกคำถาม รองรับมือถือและเดสท็อป โดยได้โซลูชั่นมาจาก frontendmentor",
+    text: "การสร้างการ์ด FAQ แสดงข้อความที่ซ้อนไว้เมื่อคลิกคำถาม รองรับมือถือและเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
   },
   {
     name: "portfolio V1",
@@ -311,7 +318,7 @@ const project = [
     href: "https://jaydb-user.netlify.app/",
     img: todolist,
     github: "",
-    type: ["JAVASCRIPT", "NEXTJS", "MONGO DB"],
+    type: ["JAVASCRIPT", "NEXTJS", "MONGO DB","TAILWIND"],
     text: "การสร้างหน้าเว็บ Totolist โดยใช้ mongodb เป็นฐานข้อมูล โดยต้องสมัครใช้งานก่อนถึงจะใส่ข้อมูลใน todolist ได้",
     RECOMMEND: true,
   },
@@ -321,7 +328,7 @@ const project = [
     img: bigdata,
     github: "",
     type: ["HTML","CSS"],
-    text: "การสร้างหน้าเว็บ Big Data Page โดยได้โซลูชั่นมาจาก figma ",
+    text: "การสร้างหน้าเว็บ Big Data Page โดยได้ต้นแบบมาจาก figma ",
     RECOMMEND: true,
   },
   {
@@ -329,11 +336,38 @@ const project = [
     href: "https://spacetourismwebsitemain.netlify.app/",
     img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Challenges/wudjsbv8g93aarlhvbud.jpg",
     github: "https://github.com/NiLoBol/space-tourism-website-main",
-    type: ["TYPESCRIPT", "NEXTJS", "CSS"],
-    text: "",
+    type: ["TYPESCRIPT", "NEXTJS","TAILWIND"],
+    text: "การสร้างหน้าเว็บไซต์ ที่มีรายละเอียดเกี่ยวกับอวกาศ รองรับมือถือและเดสท็อป",
     RECOMMEND: true,
   },
-  // {
+  {
+    name: "Manage landing page",
+    href: "https://spiffy-arithmetic-c178c0.netlify.app/",
+    img: Managelandingpage,
+    github: "https://github.com/NiLoBol/manage-landing-page-master",
+    type: ["Vue","Tailwind"],
+    text: "การสร้างเว็บไซต์ Manage landing page รองรับเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
+    RECOMMEND: false,
+  },
+    {
+    name: "Shorten url",
+    href: "https://shorten-url-nilobol.netlify.app/",
+    img: shortenurl,
+    github: "https://github.com/NiLoBol/shorten-url",
+    type: ["NEXTJS","TAILWIND"],
+    text: "การสร้างเว็บไซต์ Shorten url โดยจะดึง API มีใช้ทำให้URLสั้นลง รองรับเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
+    RECOMMEND: false,
+  },
+    {
+    name: "Product list with cart",
+    href: "https://product-list-with-cart-nilobol.netlify.app/",
+    img: productlistwithcart,
+    github: "https://github.com/NiLoBol/product-list-with-cart",
+    type: ["NEXTJS","TAILWIND"],
+    text: "การสร้างหน้าเว็บไซต์ร้านขายของโดยดึงมาเฉพาะหน้ารายละเอียดสินค้า  รองรับเดสท็อป โดยได้ต้นแบบมาจาก frontendmentor",
+    RECOMMEND: false,
+  },
+    // {
   //   name: "",
   //   href: "",
   //   img: "",
